@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">2 Beats loop timer </string>
+    <string name="AppID">ca-app-pub-7609393969532665~4032960229</string>
+    <string name="sound">Sound</string>
+    <string name="flash">Flash</string>
+    <string name="vibrate">Vibrate</string>
+    <string name="tvb1"> --- </string>
+    <string name="tvb2"> --- </string>
+    <string name="tvb3"> --- </string>
+    <string name="btnStart">START</string>
+    <string name="btnReset">RESET</string>
+    <string name="repeat">REPEAT</string>
+    <string name="email">ajssz.apk@gmail.com</string>
+    <string name="Soho">by OiOiO</string>
+</resources>

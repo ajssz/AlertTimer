@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+
+
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+
+        android:orientation="horizontal">
+
+        <NumberPicker
+            android:id="@+id/numberPicker01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5sp"
+
+            android:paddingStart="5sp"
+            android:paddingLeft="5sp"
+            android:paddingTop="5sp"
+            android:paddingEnd="5sp"
+            android:paddingRight="5sp"
+            android:paddingBottom="5sp"
+            android:scrollbarSize="10dp"
+            android:solidColor="#2196F3"
+            android:soundEffectsEnabled="true"
+            android:theme="@style/my_numberPicker_style" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3sp"
+                android:text="@string/sound"
+                android:textSize="24sp" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3sp"
+                android:text="@string/flash"
+                android:textSize="24sp" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3sp"
+                android:text="@string/vibrate"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tvB1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tvb1"
+                android:textAlignment="center"
+                android:textColor="@color/red000"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+
+        android:orientation="horizontal">
+
+        <NumberPicker
+            android:paddingStart="5sp"
+            android:paddingLeft="5sp"
+            android:paddingTop="5sp"
+            android:paddingEnd="5sp"
+            android:paddingRight="5sp"
+            android:paddingBottom="5sp"
+            android:id="@+id/numberPicker02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:scrollbarSize="10dp"
+            android:solidColor="#CDDC39"
+            android:soundEffectsEnabled="true"
+            android:theme="@style/my_numberPicker_style" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3sp"
+                android:text="@string/sound"
+                android:textSize="24sp" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3sp"
+                android:text="@string/flash"
+                android:textSize="24sp" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3sp"
+                android:text="@string/vibrate"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tvB2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tvb2"
+                android:textAlignment="center"
+                android:textColor="@color/red000"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:weightSum="3"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvB3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/tvb3"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="30sp" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/swRepeat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="3sp"
+                android:text="@string/repeat"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnReset"
+
+                style="?android:attr/buttonBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/btnReset" />
+
+            <Button
+                android:id="@+id/btnStart"
+
+                style="?android:attr/buttonBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingRight="20dp"
+                android:text="@string/btnStart" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+
+                app:adSize="BANNER"
+                app:adUnitId="ca-app-pub-7609393969532665/1819883940"></com.google.android.gms.ads.AdView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
